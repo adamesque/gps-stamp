@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import "compass";
+
+body {
+  margin: 1em;
+}
+
+h1 {
+  font-size: 1.8em;
+  overflow: auto;
+}
+
+button {
+  background: #eee;
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
+  width: 100%;
+
+  &:active {
+    background: darken(#eee, 5%);
+  }
+
+  & + button {
+    margin: 1em 0 0;
+  }
+}
+
+#toggle-tracking {
+  .is-tracking & {
+    background: #b7e889;
+  }
+}
+
+#data {
+  color: #999;
+  font-size: 0.75em;
+}
+
+#stamp {
+}
