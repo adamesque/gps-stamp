@@ -37,5 +37,26 @@ button {
   font-size: 0.75em;
 }
 
-#stamp {
+#stamps {
+  ol {
+  }
+
+  li {
+    margin: 0.5em 0;
+  }
+
+  .timestamp {
+    display: block;
+    font-style: italic;
+    color: #ccc;
+  }
+}
+
+#clear-all-stamps {
+  background: #f76363;
+  color: #fff;
+
+  &:active {
+    background: darken(#f76363, 5%);
+  }
 }
