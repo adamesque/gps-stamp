@@ -50,11 +50,15 @@ end
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def replication_url
+    if build?
+      "https://rxn-adam:b00ty@rxn-adam.iriscouch.com/gps-stamp"
+    else
+      "https://rxn-adam:b00ty@rxn-adam.iriscouch.com/gps-stamp-dev"
+    end
+  end
+end
 
 set :css_dir, 'stylesheets'
 
